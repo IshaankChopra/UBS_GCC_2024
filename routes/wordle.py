@@ -9,10 +9,10 @@ from routes import app
 
 logger = logging.getLogger(__name__)
 
-with open('words.csv', 'r') as file:
-    reader = csv.reader(file)
-    word_list = [row[0] for row in reader]
-# word_list = ["slate", "lucky", "maser", "gapes", "wages"]
+# with open('words.csv', 'r') as file:
+#     reader = csv.reader(file)
+#     word_list = [row[0] for row in reader]
+word_list = ["slate", "lucky", "maser", "gapes", "wages"]
 
 def filter_words(guess, feedback, words):
     for i, (g, f) in enumerate(zip(guess, feedback)):
